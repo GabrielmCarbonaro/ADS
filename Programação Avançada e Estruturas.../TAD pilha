@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+		// Criar uma pilha p - chamando o CONSTRUTOR
+		TADPilha p = new TADPilha (100);
+		
+		int n=10, resto;
+		
+		while (n != 0 ) {
+		    resto = n%2;       // 0-1-0-1
+		    p.empilha (resto); // 0-1-0-1
+            n = n /2 ;         // 5-2-1-0
+		}
+		System.out.println ("Ao contrario");
+		p.mostraAoContrario();
+		//System.out.println ("Normal");
+		//p.mostra();
+		System.out.println ("A pilha p tem " + 
+		                    p.conta() + " elementos");
+	}
+}
