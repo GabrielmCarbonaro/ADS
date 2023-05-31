@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+
+		String expressao="34+";
+		char aux;
+		
+		for (int i=0; i< expressao.length(); i++)  {
+		    aux = expressao.charAt(i);
+		    System.out.println (aux);
+		}
+	}
+}
